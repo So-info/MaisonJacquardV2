@@ -1,0 +1,1139 @@
+/*==================================================
+MJ AVIATOR
+Maison Jacquard
+==================================================*/
+
+:root{
+
+    --gold:#C8A56A;
+    --black:#050505;
+    --dark:#0c0c0c;
+    --card:#111111;
+    --text:#ECECEC;
+
+}
+
+/*==================================================
+HERO
+==================================================*/
+
+.aviator-hero{
+
+    min-height:100vh;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    align-items:center;
+
+    gap:100px;
+
+    max-width:1500px;
+
+    margin:auto;
+
+    padding:140px 8% 80px;
+
+}
+
+.aviator-left{
+
+    animation:fadeLeft 1s ease;
+
+}
+
+.subtitle{
+
+    color:var(--gold);
+
+    text-transform:uppercase;
+
+    letter-spacing:6px;
+
+    font-size:13px;
+
+    margin-bottom:20px;
+
+}
+
+.aviator-left h1{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:105px;
+
+    line-height:1;
+
+    margin-bottom:30px;
+
+    color:white;
+
+}
+
+.aviator-left p{
+
+    font-size:22px;
+
+    line-height:1.9;
+
+    color:#d5d5d5;
+
+    margin-bottom:45px;
+
+}
+
+.aviator-right{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.aviator-right img{
+
+    width:100%;
+
+    max-width:700px;
+
+    filter:drop-shadow(0 45px 80px rgba(0,0,0,.55));
+
+    transition:.6s;
+
+}
+
+.aviator-right img:hover{
+
+    transform:rotate(-2deg) scale(1.03);
+
+}
+
+.btn{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:18px 55px;
+
+    border:1px solid var(--gold);
+
+    color:white;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    transition:.35s;
+
+}
+
+.btn:hover{
+
+    background:var(--gold);
+
+    color:black;
+
+    transform:translateY(-4px);
+
+}
+
+@keyframes fadeLeft{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:none;
+
+    }
+
+}
+/*==================================================
+SECTION PRÉSENTATION
+==================================================*/
+
+#aviator{
+
+    padding:160px 8%;
+
+    background:#090909;
+
+}
+
+#aviator .container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+#aviator h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:72px;
+
+    color:white;
+
+    margin-bottom:35px;
+
+}
+
+#aviator p{
+
+    max-width:900px;
+
+    margin:auto;
+
+    color:#d5d5d5;
+
+    font-size:20px;
+
+    line-height:1.9;
+
+}
+
+/*==================================================
+CARACTÉRISTIQUES
+==================================================*/
+
+#specs{
+
+    padding:170px 8%;
+
+    background:#050505;
+
+}
+
+#specs .container{
+
+    max-width:1450px;
+
+    margin:auto;
+
+}
+
+#specs h2{
+
+    text-align:center;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:70px;
+
+    margin:20px 0 80px;
+
+}
+
+.spec-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+.spec{
+
+    background:#111111;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    border-radius:18px;
+
+    padding:45px;
+
+    transition:.35s;
+
+}
+
+.spec:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#C8A56A;
+
+    box-shadow:0 30px 70px rgba(0,0,0,.45);
+
+}
+
+.spec h3{
+
+    color:#C8A56A;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:34px;
+
+    margin-bottom:18px;
+
+}
+
+.spec p{
+
+    color:#d2d2d2;
+
+    line-height:1.8;
+
+}
+
+/*==================================================
+INSPIRATION
+==================================================*/
+
+#inspiration{
+
+    padding:170px 8%;
+
+    background:#090909;
+
+}
+
+#inspiration .container{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:100px;
+
+    align-items:center;
+
+}
+
+.inspiration-image img{
+
+    width:100%;
+
+    border-radius:18px;
+
+    box-shadow:0 35px 80px rgba(0,0,0,.45);
+
+}
+
+.inspiration-content h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:64px;
+
+    margin:20px 0 30px;
+
+}
+
+.inspiration-content p{
+
+    line-height:1.9;
+
+    margin-bottom:30px;
+
+}
+
+.premium-list{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.premium-list li{
+
+    margin-bottom:18px;
+
+    color:#d8d8d8;
+
+}
+/*==================================================
+TIMELINE
+==================================================*/
+
+#timeline{
+
+    padding:170px 8%;
+
+    background:#050505;
+
+}
+
+#timeline .container{
+
+    max-width:1500px;
+
+    margin:auto;
+
+}
+
+#timeline h2{
+
+    text-align:center;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:70px;
+
+    margin:20px 0 90px;
+
+}
+
+.timeline{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:35px;
+
+}
+
+.timeline-item{
+
+    background:#111111;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    border-radius:18px;
+
+    padding:45px;
+
+    transition:.35s;
+
+    position:relative;
+
+}
+
+.timeline-item:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#C8A56A;
+
+    box-shadow:0 30px 70px rgba(0,0,0,.45);
+
+}
+
+.timeline-number{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    background:#C8A56A;
+
+    color:#050505;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+}
+
+.timeline-item h3{
+
+    font-family:"Cormorant Garamond",serif;
+
+    color:#C8A56A;
+
+    font-size:34px;
+
+    margin-bottom:18px;
+
+}
+
+.timeline-item p{
+
+    color:#d2d2d2;
+
+    line-height:1.8;
+
+}
+
+/*==================================================
+GALERIE
+==================================================*/
+
+#gallery{
+
+    padding:170px 8%;
+
+    background:#090909;
+
+}
+
+#gallery .container{
+
+    max-width:1500px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+#gallery h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:68px;
+
+    margin:20px 0 70px;
+
+}
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.gallery-grid img{
+
+    width:100%;
+
+    height:480px;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    cursor:pointer;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    transition:.45s;
+
+}
+
+.gallery-grid img:hover{
+
+    transform:scale(1.04);
+
+    border-color:#C8A56A;
+
+    box-shadow:0 35px 80px rgba(0,0,0,.45);
+
+}
+
+/*==================================================
+ANIMATION IMAGES
+==================================================*/
+
+.gallery-grid img{
+
+    animation:fadeUp .8s ease both;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+/*==================================================
+POURQUOI AVIATOR
+==================================================*/
+
+#why-aviator{
+
+    padding:170px 8%;
+
+    background:#050505;
+
+}
+
+#why-aviator .container{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:100px;
+
+    align-items:center;
+
+}
+
+.why-left h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:64px;
+
+    margin:20px 0 30px;
+
+    color:white;
+
+}
+
+.why-left p{
+
+    color:#d5d5d5;
+
+    line-height:1.9;
+
+}
+
+.why-right{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+.advantage{
+
+    background:#111111;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    border-radius:18px;
+
+    padding:35px;
+
+    transition:.35s;
+
+}
+
+.advantage:hover{
+
+    transform:translateX(10px);
+
+    border-color:#C8A56A;
+
+}
+
+.advantage h3{
+
+    color:#C8A56A;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:30px;
+
+    margin-bottom:15px;
+
+}
+
+.advantage p{
+
+    color:#cfcfcf;
+
+}
+
+/*==================================================
+RÉSERVATION
+==================================================*/
+
+#reserve{
+
+    padding:170px 8%;
+
+    background:#090909;
+
+}
+
+#reserve .container{
+
+    display:grid;
+
+    grid-template-columns:1fr 420px;
+
+    gap:90px;
+
+    align-items:center;
+
+}
+
+.reserve-left h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:64px;
+
+    margin:20px 0;
+
+}
+
+.reserve-left p{
+
+    color:#d5d5d5;
+
+    line-height:1.9;
+
+}
+
+.reservation-box{
+
+    background:#111111;
+
+    border:1px solid rgba(200,165,106,.18);
+
+    border-radius:20px;
+
+    padding:50px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    box-shadow:0 30px 70px rgba(0,0,0,.45);
+
+}
+
+.reservation-box:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#C8A56A;
+
+}
+
+.reservation-box h3{
+
+    color:#C8A56A;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:38px;
+
+    margin-bottom:25px;
+
+}
+
+.reservation-box p{
+
+    margin-bottom:35px;
+
+}
+
+/*==================================================
+LIGHTBOX
+==================================================*/
+
+#lightbox{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(0,0,0,.96);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.35s;
+
+    z-index:99999;
+
+}
+
+#lightbox.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+#lightbox img{
+
+    max-width:90%;
+
+    max-height:90%;
+
+    border-radius:12px;
+
+    box-shadow:0 40px 90px rgba(0,0,0,.6);
+
+}
+
+#closeLightbox{
+
+    position:absolute;
+
+    top:30px;
+
+    right:45px;
+
+    font-size:60px;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#closeLightbox:hover{
+
+    color:#C8A56A;
+
+}
+
+/*==================================================
+FOOTER
+==================================================*/
+
+footer{
+
+    background:#030303;
+
+    border-top:1px solid rgba(255,255,255,.05);
+
+    padding:90px 8% 40px;
+
+}
+
+.footer-container{
+
+    max-width:1400px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr;
+
+    gap:60px;
+
+}
+
+.footer-brand h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:42px;
+
+    color:#C8A56A;
+
+    margin-bottom:20px;
+
+}
+
+.footer-links h3,
+.footer-contact h3{
+
+    color:#C8A56A;
+
+    margin-bottom:20px;
+
+}
+
+.footer-links ul{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.footer-links li{
+
+    margin-bottom:12px;
+
+}
+
+.footer-links a{
+
+    color:#d0d0d0;
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:#C8A56A;
+
+}
+
+.footer-brand p,
+.footer-contact p{
+
+    color:#8f8f8f;
+
+    line-height:1.8;
+
+}
+
+.footer-bottom{
+
+    margin-top:60px;
+
+    padding-top:30px;
+
+    border-top:1px solid rgba(255,255,255,.05);
+
+    text-align:center;
+
+    color:#777;
+
+}
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media (max-width:1200px){
+
+    .aviator-hero{
+
+        grid-template-columns:1fr;
+
+        gap:70px;
+
+        text-align:center;
+
+    }
+
+    .aviator-right{
+
+        order:-1;
+
+    }
+
+    #inspiration .container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    #why-aviator .container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    #reserve .container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .timeline{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .gallery-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .aviator-left h1{
+
+        font-size:64px;
+
+    }
+
+    .aviator-left p{
+
+        font-size:18px;
+
+    }
+
+    #aviator h2,
+    #specs h2,
+    .inspiration-content h2,
+    #timeline h2,
+    .why-left h2,
+    .reserve-left h2{
+
+        font-size:46px;
+
+    }
+
+    .timeline{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .gallery-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .spec-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .footer-container{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    .aviator-hero{
+
+        padding:120px 24px 60px;
+
+    }
+
+    .aviator-left h1{
+
+        font-size:48px;
+
+    }
+
+    .subtitle{
+
+        letter-spacing:3px;
+
+        font-size:11px;
+
+    }
+
+    .btn{
+
+        width:100%;
+
+    }
+
+}
+
+/*==================================================
+EFFETS
+==================================================*/
+
+.spec,
+.timeline-item,
+.advantage,
+.reservation-box{
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+
+}
+
+.aviator-right img{
+
+    will-change:transform;
+
+}
+
+.gallery-grid img{
+
+    will-change:transform;
+
+}
+
+/*==================================================
+SCROLLBAR
+==================================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#080808;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#C8A56A;
+
+    border-radius:999px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#E3C78C;
+
+}
+
+/*==================================================
+SÉLECTION
+==================================================*/
+
+::selection{
+
+    background:#C8A56A;
+
+    color:#050505;
+
+}
+
+/*==================================================
+FIN
+==================================================*/
